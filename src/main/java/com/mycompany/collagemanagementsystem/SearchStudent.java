@@ -183,7 +183,7 @@ public class SearchStudent extends javax.swing.JFrame {
             // load driver
             Class.forName("com.mysql.cj.jdbc.Driver");
             // create connection
-             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/abc","root","Ashrafi@9792");
+             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/abc","root","Your real password");
              // writea query
              String query="select * from student where RollNumber=?";
              // use prepared statement
