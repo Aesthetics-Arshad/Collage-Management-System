@@ -213,7 +213,7 @@ public class DeleteStudent extends javax.swing.JFrame {
             model.setRowCount(0);
         Class.forName("com.mysql.cj.jdbc.Driver");
             // create connection
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/abc","root","Ashrafi@9792");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/abc","root","Your real password");
             // write a query
             String query="select * from Student where RollNumber=?";
             PreparedStatement prn=con.prepareCall(query);
