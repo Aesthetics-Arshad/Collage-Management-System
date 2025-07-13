@@ -142,7 +142,7 @@ public class AddStudent extends javax.swing.JFrame {
         int srollnumber=Integer.parseInt(studentName);
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/abc","root","Ashrafi@9792");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/abc","root","Your Real Password");
             String query="insert into student values(?,?,?)";
             PreparedStatement prn=con.prepareStatement(query);
             prn.setInt(1, srollnumber);
