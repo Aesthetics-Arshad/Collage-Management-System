@@ -251,7 +251,7 @@ public class UpdateStudent extends javax.swing.JFrame {
 
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc", "root", "Ashrafi@9792");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc", "root", "Your Real Password");
 
         String query = "SELECT * FROM student WHERE Name=?";
         PreparedStatement pst = con.prepareStatement(query);
@@ -299,7 +299,7 @@ public class UpdateStudent extends javax.swing.JFrame {
 
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc", "root", "Ashrafi@9792");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc", "root", "Your real password");
 
         String query = "UPDATE student SET Name=?, Class=? WHERE RollNumber=?";
         PreparedStatement pst = con.prepareStatement(query);
